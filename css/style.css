@@ -21,4 +21,34 @@
   bottom: 400px;
 }
 
+.container2 {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  padding-right: 1.625rem;
+  padding-top: 1.3125rem;
+}
+
+.planet {
+  position: absolute;
+  border: 1px solid black;
+  width: 6.875rem;
+  height: 2.1875rem;
+  padding: 0.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.mars {
+  background: #FF5733;
+}
+
+.ballMars {
+  background: #6C7A89;
+}
+
 /*# sourceMappingURL=style.css.map */
