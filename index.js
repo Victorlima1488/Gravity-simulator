@@ -1,19 +1,38 @@
 const ball = document.querySelector('.ball')
 const background = document.querySelector('.container')
 const planet = document.querySelector('.planet')
+const reload = document.querySelector('.reload')
 
-// Fórmula da aceleração.
+// Fórmula da aceleração na terra.
 let a = -3 * (10 ** (-3))
-// let a = -1.11 * (10 ** (-3))
+
+// Fórmula da aceleração em marte.
+let b = -1.11 * (10 ** (-3))
+
+sessionStorage.setItem('equação de marte', b)
 
 const changePlanet = () => {
     background.classList.toggle('mars')
     ball.classList.toggle('ballMars')
     planet.textContent = "Terra"
     console.log("apertou")
+
+    b = sessionStorage.getItem('equação de marte')
+    console.log(b)
+
+    const equacao = +b
+
+    a = equacao
+
+    console.log(a)
+}
+
+const reloadPage = () => {
+    location.reload()
 }
 
 planet.addEventListener('click', changePlanet)
+reload.addEventListener('click', reloadPage)
 
 // Essa fórmula mostra a posição em pixel em relação ao ao chão.
 const getBallBottom = () => {
@@ -60,7 +79,7 @@ setInterval(() => {
             v = 0
         }
         else{
-            v *= -1 * 0.8
+            v *= -1 * 0.7
         }
         
     }
