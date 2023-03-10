@@ -28,7 +28,7 @@
 .planetMars{
     position: absolute;
     border: .0625rem solid black;
-    width: 6.875rem;
+    width: 7rem;
     height: 2.1875rem;
     padding: .625rem;
     display: flex;
@@ -37,14 +37,14 @@
     font-weight: bold;
     cursor: pointer;
     a{
-        color: #FFF;
+        color: #000;
     }
 }
 
 .reloadMars{
     position: relative;
     border: .0625rem solid black;
-    width: 6.875rem;
+    width: 7rem;
     height: 2.1875rem;
     padding: .625rem;
     top: 3.125rem;
@@ -59,7 +59,7 @@
     position: absolute;
     top: 7.6875rem;
     border: .0625rem solid black;
-    width: 6.875rem;
+    width: 7rem;
     height: 2.1875rem;
     padding: 0.625rem;
     display: flex;

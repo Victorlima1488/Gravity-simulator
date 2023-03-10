@@ -29,7 +29,7 @@
 .planet{
     position: absolute;
     border: 1px solid black;
-    width: 6.875rem;
+    width: 7rem;
     height: 2.1875rem;
     padding: .625rem;
     display: flex;
@@ -38,14 +38,14 @@
     font-weight: bold;
     cursor: pointer;
     a{
-        color: #FFF;
+        color: #000;
     }
 }
 
 .reload{
     position: relative;
     border: 1px solid black;
-    width: 6.875rem;
+    width: 7rem;
     height: 2.1875rem;
     padding: .625rem;
     top: 3.125rem;
@@ -60,7 +60,7 @@
     position: absolute;
     top: 123px;
     border: 1px solid black;
-    width: 6.875rem;
+    width: 7rem;
     height: 2.1875rem;
     padding: 0.625rem;
     display: flex;
@@ -73,7 +73,7 @@
     position: absolute;
     top: 10.9375rem;
     border: 1px solid black;
-    width: 6.875rem;
+    width: 7rem;
     height: 2.1875rem;
     padding: 0.625rem;
     display: flex;
