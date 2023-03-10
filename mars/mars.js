@@ -1,14 +1,13 @@
-const ball = document.querySelector('.ball')
-const background = document.querySelector('.container')
-const planet = document.querySelector('.planet')
-const reload = document.querySelector('.reload')
+const ball = document.querySelector('.ballMars')
+const background = document.querySelector('.containerMars')
+const planet = document.querySelector('.planetMars')
+const reload = document.querySelector('.reloadMars')
 const stopwatch = document.querySelector('.stopwatch')
 const acceleration = document.querySelector('.acceleration')
 
-// Fórmula da aceleração na terra.
-let a = -3 * (10 ** (-3))
+let a = -1.11 * (10 ** (-3))
 
-acceleration.textContent = "a = 9,8 m/s²"
+acceleration.textContent = "a = 3,71 m/s²"
 
 const reloadPage = () => {
     location.reload()
@@ -20,9 +19,18 @@ reload.addEventListener('click', reloadPage)
 const getBallBottom = () => {
     const { bottom } = getComputedStyle(ball) // Essa função pega o estilo posto pelo css, ou mesmo pelo JS do elemento em forma de objeto. Mas, com a técnica da desestruturação, pego o elemento de estilo em especifico.  
     const bottomNumber = +bottom.replace('px', '')
-    // console.log(bottomNumber.toFixed(0))
+
     return bottomNumber
 
+}
+
+const newGetBallBottom = () => {
+    const { bottom } = getComputedStyle(ball) 
+    console.log({bottom})
+    const bottomReload = +bottom.replace('px', '')
+    console.log(bottomReload)
+
+    return bottomReload
 }
 
 // s = s0 + vt + 1/2 * at^2 Torricelli
@@ -69,7 +77,7 @@ setInterval(() => {
 
     // Cahamando a posição atual da bola
     const newBottom = getBallNewBottom(bottom, v, timeGap)
-    // console.log(newBottom.toFixed(0) + " cm")
+
     // Atualiza a nova posição da bola no espaço
     ball.style.bottom = `${Math.max(newBottom, 0)}px`
 }, 1);
@@ -95,12 +103,4 @@ const formatTime = (timeInSeconds) => {
     // Retorna o tempo formatado no formato "mm:ss"
     return `${formattedMinutes}:${formattedSeconds}`;
   }
-
-
- 
-  
-  
-  
-  
-  
-  
+    

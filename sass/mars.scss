@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.containerMars{
+    width: 100%;
+    height: 100vh;
+    background: #FF5733;
+    display: flex;
+    justify-content: center;
+}
+
+.ballMars{
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 50%;
+    background: #6C7A89;
+    position: absolute;
+    bottom: 500px;
+}
+
+.containerMars2{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding-right: 1.625rem;
+    padding-top: 1.3125rem;
+    gap: 5px;
+}
+
+.planetMars{
+    position: absolute;
+    border: 1px solid black;
+    width: 6.875rem;
+    height: 2.1875rem;
+    padding: .625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+    a{
+        color: #FFF;
+    }
+}
+
+.reloadMars{
+    position: relative;
+    border: 1px solid black;
+    width: 6.875rem;
+    height: 2.1875rem;
+    padding: .625rem;
+    top: 3.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.acceleration{
+    position: absolute;
+    top: 10.9375rem;
+    border: 1px solid black;
+    width: 6.875rem;
+    height: 2.1875rem;
+    padding: 0.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.title{
+    position: absolute;
+    margin-top: 5px;
+    font-size: 20px;
+}
+

@@ -1,3 +1,3 @@
-Esse projeto prefigura uma bola caindo, sofrendo o efeito da gravidade.
+Esse projeto prefigura uma bola caindo, sofrendo o efeito da gravidade em dois ambientes diferentes, e, Marte e na Terra.
 
-O usuário pode escolher se essa bola está caindo na terra ou na lua, tendo assim efeitos diferentes conforme a gravidade de cada espaço.
+O usuário escolhe o ambiente e executa a simulação. É mostrado na tela a aceleração em m/s² e também o tempo que a bola levou para sair do repouso até a posição final.
