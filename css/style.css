@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  color: #FFF;
+  color: black;
 }
 
 .container {
@@ -46,7 +46,7 @@
   cursor: pointer;
 }
 .planet a {
-  color: #FFF;
+  color: black;
 }
 
 .reload {
@@ -213,6 +213,12 @@
 }
 
 @media (max-width: 750px) {
+  .planetMars {
+    top: 50px;
+  }
+  .reloadMars {
+    top: 80px;
+  }
   .acceleration {
     top: 202px;
   }
