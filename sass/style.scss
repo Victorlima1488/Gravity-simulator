@@ -1,9 +1,9 @@
-@import "./earth.scss";
-@import "./mars.scss";
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
+
+@import "./earth.scss";
+@import "./mars.scss";

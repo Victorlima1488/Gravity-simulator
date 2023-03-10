@@ -1,5 +1,8 @@
 * {
-  color: black;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
 .container {
@@ -16,7 +19,7 @@
   border-radius: 50%;
   background: brown;
   position: absolute;
-  bottom: 500px;
+  bottom: 31.25rem;
 }
 
 .container2 {
@@ -26,7 +29,7 @@
   justify-content: end;
   padding-right: 1.625rem;
   padding-top: 1.3125rem;
-  gap: 5px;
+  gap: 0.3125rem;
 }
 
 .planet {
@@ -42,7 +45,7 @@
   cursor: pointer;
 }
 .planet a {
-  color: black;
+  color: #FFF;
 }
 
 .reload {
@@ -87,40 +90,40 @@
 
 .title {
   position: absolute;
-  margin-top: 5px;
-  font-size: 20px;
+  margin-top: 0.3125rem;
+  font-size: 1.25rem;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 46.875rem) {
   .planet {
-    top: 50px;
+    top: 3.125rem;
   }
   .reload {
-    top: 80px;
+    top: 5rem;
   }
   .stopwatch {
-    top: 152px;
+    top: 9.5rem;
   }
   .acceleration {
-    top: 202px;
+    top: 12.625rem;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 28.125rem) {
   .title {
-    font-size: 17px;
+    font-size: 0.9375rem;
   }
 }
-@media (max-width: 380px) {
+@media (max-width: 23.75rem) {
   .title {
-    width: 280px;
-    top: 5px;
-    font-size: 14px;
+    width: 17.5rem;
+    top: 0.3125rem;
+    font-size: 0.75rem;
   }
   .planet, .stopwatch, .acceleration {
-    right: 7px;
+    right: 0.4375rem;
   }
   .reload {
-    right: -19px;
+    right: -1.1875rem;
   }
 }
 .containerMars {
@@ -147,12 +150,12 @@
   justify-content: end;
   padding-right: 1.625rem;
   padding-top: 1.3125rem;
-  gap: 5px;
+  gap: 0.3125rem;
 }
 
 .planetMars {
   position: absolute;
-  border: 1px solid black;
+  border: 0.0625rem solid black;
   width: 6.875rem;
   height: 2.1875rem;
   padding: 0.625rem;
@@ -168,7 +171,7 @@
 
 .reloadMars {
   position: relative;
-  border: 1px solid black;
+  border: 0.0625rem solid black;
   width: 6.875rem;
   height: 2.1875rem;
   padding: 0.625rem;
@@ -178,14 +181,12 @@
   justify-content: center;
   font-weight: bold;
   cursor: pointer;
-  color: #FFF;
 }
 
 .stopwatchMars {
-  color: #FFF;
   position: absolute;
-  top: 123px;
-  border: 1px solid black;
+  top: 7.6875rem;
+  border: 0.0625rem solid black;
   width: 6.875rem;
   height: 2.1875rem;
   padding: 0.625rem;
@@ -195,57 +196,27 @@
   font-weight: bold;
 }
 
-.acceleration {
-  position: absolute;
-  top: 10.9375rem;
-  border: 1px solid black;
-  width: 6.875rem;
-  height: 2.1875rem;
-  padding: 0.625rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  color: #FFF;
-}
-
-.title {
-  text-align: center;
-  position: absolute;
-  margin-top: 5px;
-  font-size: 20px;
-  color: #FFF;
-}
-
-@media (max-width: 750px) {
+@media (max-width: 46.875rem) {
   .planetMars {
-    top: 50px;
+    top: 3.125rem;
   }
   .reloadMars {
-    top: 80px;
+    top: 5rem;
   }
   .acceleration {
-    top: 202px;
+    top: 12.625rem;
+  }
+  .stopwatchMars {
+    top: 9.5rem;
   }
 }
-@media (max-width: 380px) {
-  .title {
-    width: 280px;
-    top: 5px;
-    font-size: 14px;
-  }
+@media (max-width: 23.75rem) {
   .planetMars {
-    right: 7px;
+    right: 0.4375rem;
   }
   .reloadMars {
-    right: -19px;
+    right: -1.1875rem;
   }
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,3 @@
-*{
-    color: black;
-}
 .container{
     width: 100%;
     height: 100vh;
@@ -15,7 +12,7 @@
     border-radius: 50%;
     background: brown;
     position: absolute;
-    bottom: 500px;
+    bottom: 31.25rem;
 }
 
 .container2{
@@ -25,8 +22,9 @@
     justify-content: end;
     padding-right: 1.625rem;
     padding-top: 1.3125rem;
-    gap: 5px;
+    gap: .3125rem
 }
+
 
 .planet{
     position: absolute;
@@ -40,7 +38,7 @@
     font-weight: bold;
     cursor: pointer;
     a{
-        color: black;
+        color: #FFF;
     }
 }
 
@@ -86,42 +84,41 @@
 
 .title{
     position: absolute;
-    margin-top: 5px;
-    font-size: 20px;
+    margin-top: .3125rem;
+    font-size: 1.25rem;
 }
 
-@media (max-width: 750px){
+@media (max-width: 46.875rem){
     .planet{
-        top: 50px;
+        top: 3.125rem;
     }
     .reload{
-        top: 80px;
+        top: 5rem;
     }
     .stopwatch{
-        top: 152px;
+        top: 9.5rem;
     }
     .acceleration{
-        top: 202px;
+        top: 12.625rem;
     }
 }
 
-@media(max-width: 450px){
+@media(max-width: 28.125rem){
     .title{
-        font-size: 17px;
+        font-size: .9375rem;
     }
 }
 
-@media(max-width: 380px){
+@media(max-width: 23.75rem){
     .title{
-        width: 280px;
-        top: 5px;
-        font-size: 14px;
+        width: 17.5rem;
+        top: .3125rem;
+        font-size: .75rem;
     }
     .planet, .stopwatch, .acceleration{
-        right: 7px;
+        right: .4375rem;
     }
     .reload{
-        right: -19px;
+        right: -1.1875rem;
     }
 }
-

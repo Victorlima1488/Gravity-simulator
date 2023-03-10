@@ -20,9 +20,7 @@ reload.addEventListener('click', reloadPage)
 const getBallBottom = () => {
     const { bottom } = getComputedStyle(ball) // Essa função pega o estilo posto pelo css, ou mesmo pelo JS do elemento em forma de objeto. Mas, com a técnica da desestruturação, pego o elemento de estilo em especifico.  
     const bottomNumber = +bottom.replace('px', '')
-    // console.log(bottomNumber.toFixed(0))
     return bottomNumber
-
 }
 
 // s = s0 + vt + 1/2 * at^2 Torricelli
@@ -37,16 +35,14 @@ let v = 0
 
 // Vai pegar o momento atual em miliseguntos
 let time = Date.now()
-// console.log(time)
 
 setInterval(() => {
     // Vai pegar o novo momento atual em miliseguntos
     const currentTime = Date.now()
-    // console.log(currentTime)
 
     // Vai obter a diferença de tempo, e esse tempo vai ser enviado para a equação de Torricelli
     const timeGap = currentTime - time
-    // console.log(timeGap)
+
     time = currentTime
 
     // Pegou a posição da bola
@@ -63,13 +59,12 @@ setInterval(() => {
         }
         else{
             v *= -1 * 0.7
-        }
-        
+        }      
     }
 
     // Cahamando a posição atual da bola
     const newBottom = getBallNewBottom(bottom, v, timeGap)
-    // console.log(newBottom.toFixed(0) + " cm")
+
     // Atualiza a nova posição da bola no espaço
     ball.style.bottom = `${Math.max(newBottom, 0)}px`
 }, 1);
@@ -82,13 +77,10 @@ let timer = setInterval(()=>{
     console.log(timeClock)
 }, 1000) 
 
-
-
 const formatTime = (timeInSeconds) => {
     const minutes = Math.floor(timeInSeconds / 60);
     const seconds = timeInSeconds % 60;
   
-    // Adicione um zero à esquerda dos minutos e segundos, se necessário
     const formattedMinutes = (minutes < 10) ? `0${minutes}` : minutes;
     const formattedSeconds = (seconds < 10) ? `0${seconds}` : seconds;
   

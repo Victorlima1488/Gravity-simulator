@@ -19,18 +19,7 @@ reload.addEventListener('click', reloadPage)
 const getBallBottom = () => {
     const { bottom } = getComputedStyle(ball) // Essa função pega o estilo posto pelo css, ou mesmo pelo JS do elemento em forma de objeto. Mas, com a técnica da desestruturação, pego o elemento de estilo em especifico.  
     const bottomNumber = +bottom.replace('px', '')
-
     return bottomNumber
-
-}
-
-const newGetBallBottom = () => {
-    const { bottom } = getComputedStyle(ball) 
-    console.log({bottom})
-    const bottomReload = +bottom.replace('px', '')
-    console.log(bottomReload)
-
-    return bottomReload
 }
 
 // s = s0 + vt + 1/2 * at^2 Torricelli
@@ -45,16 +34,14 @@ let v = 0
 
 // Vai pegar o momento atual em miliseguntos
 let time = Date.now()
-// console.log(time)
 
 setInterval(() => {
     // Vai pegar o novo momento atual em miliseguntos
     const currentTime = Date.now()
-    // console.log(currentTime)
 
     // Vai obter a diferença de tempo, e esse tempo vai ser enviado para a equação de Torricelli
     const timeGap = currentTime - time
-    // console.log(timeGap)
+
     time = currentTime
 
     // Pegou a posição da bola
@@ -67,12 +54,11 @@ setInterval(() => {
     if(bottom === 0){
         if(v > -0.1){
             v = 0
-            clearInterval(timer)
+            clearInterval(timer) // Encerra a função da cronometro
         }
         else{
             v *= -1 * 0.7
-        }
-        
+        }     
     }
 
     // Cahamando a posição atual da bola
@@ -84,19 +70,19 @@ setInterval(() => {
 
 let timeClock = 0
 
+// Função do cronometro
 let timer = setInterval(()=>{
     timeClock++
     stopwatch.textContent = formatTime(timeClock)
     console.log(timeClock)
 }, 1000) 
 
-
-
+// Função que formata a hora 
 const formatTime = (timeInSeconds) => {
     const minutes = Math.floor(timeInSeconds / 60);
     const seconds = timeInSeconds % 60;
   
-    // Adicione um zero à esquerda dos minutos e segundos, se necessário
+
     const formattedMinutes = (minutes < 10) ? `0${minutes}` : minutes;
     const formattedSeconds = (seconds < 10) ? `0${seconds}` : seconds;
   
