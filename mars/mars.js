@@ -2,7 +2,7 @@ const ball = document.querySelector('.ballMars')
 const background = document.querySelector('.containerMars')
 const planet = document.querySelector('.planetMars')
 const reload = document.querySelector('.reloadMars')
-const stopwatch = document.querySelector('.stopwatch')
+const stopwatch = document.querySelector('.stopwatchMars')
 const acceleration = document.querySelector('.acceleration')
 
 let a = -1.11 * (10 ** (-3))

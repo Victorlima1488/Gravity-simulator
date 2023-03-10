@@ -1,3 +1,7 @@
+* {
+  color: black;
+}
+
 .container {
   width: 100%;
   height: 100vh;
@@ -174,6 +178,21 @@
   justify-content: center;
   font-weight: bold;
   cursor: pointer;
+  color: #FFF;
+}
+
+.stopwatchMars {
+  color: #FFF;
+  position: absolute;
+  top: 123px;
+  border: 1px solid black;
+  width: 6.875rem;
+  height: 2.1875rem;
+  padding: 0.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
 }
 
 .acceleration {
@@ -187,6 +206,7 @@
   align-items: center;
   justify-content: center;
   font-weight: bold;
+  color: #FFF;
 }
 
 .title {
@@ -194,6 +214,7 @@
   position: absolute;
   margin-top: 5px;
   font-size: 20px;
+  color: #FFF;
 }
 
 @media (max-width: 750px) {
@@ -225,7 +246,6 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
