@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    color: #FFF;
 }
 
 .container{
@@ -92,5 +93,40 @@
     position: absolute;
     margin-top: 5px;
     font-size: 20px;
+}
+
+@media (max-width: 750px){
+    .planet{
+        top: 50px;
+    }
+    .reload{
+        top: 80px;
+    }
+    .stopwatch{
+        top: 152px;
+    }
+    .acceleration{
+        top: 202px;
+    }
+}
+
+@media(max-width: 450px){
+    .title{
+        font-size: 17px;
+    }
+}
+
+@media(max-width: 380px){
+    .title{
+        width: 280px;
+        top: 5px;
+        font-size: 14px;
+    }
+    .planet, .stopwatch, .acceleration{
+        right: 7px;
+    }
+    .reload{
+        right: -19px;
+    }
 }
 
